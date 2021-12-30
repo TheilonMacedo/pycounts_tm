@@ -19,7 +19,7 @@ def load_text(filepath):
     Returns:
         text (str): The text loaded from the file.
     """
-    with open(filepath) as file:
+    with open(filepath, encoding='utf-8') as file:
         text = file.read()
     return text
 
