@@ -18,6 +18,10 @@ def load_text(filepath):
 
     Returns:
         text (str): The text loaded from the file.
+
+    Examples
+    --------
+    >>> load_text('text.txt')
     """
     with open(filepath, encoding='utf-8') as file:
         text = file.read()
@@ -32,6 +36,10 @@ def clean_text(text):
 
     Returns:
         text (str): The cleaned string.
+
+    Examples
+    --------
+    >>> clean_text('Hey, Jude!')
     """
     text = text.lower()
     for signal in punctuation:
@@ -47,6 +55,10 @@ def count_words(input_file):
 
     Returns:
         Word count (dict): A dictionary of words and their counts.
+
+    Examples
+    --------
+    >>> count_words('einstein.txt')
     """
     text = load_text(input_file)
     text = clean_text(text)

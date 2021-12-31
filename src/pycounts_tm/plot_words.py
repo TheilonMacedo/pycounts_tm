@@ -12,6 +12,16 @@ def plot_word_counts(word_counts, num_words=10):
     Args:
         word_counts (dict): A dictionary of words and their counts.
         top_words (int): The number of most commo words to be plotted.
+
+    Returns:
+        plot (matplotlib.pyplot): The plot of the word counts.
+
+    Examples
+    --------
+    >>> from pycounts_tm.plot_words import plot_word_counts
+    >>> from pycounts_tm.pycounts_tm import count_words
+    >>> word_counts = count_words('tests/einstein.txt')
+    >>> plot_word_counts(word_counts)
     """
     top_n_words = word_counts.most_common(num_words)
     word, count = zip(*top_n_words)
