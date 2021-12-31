@@ -1,6 +1,7 @@
 # pycounts_tm
 
-A package to count the number of words in a text.
+A package to count the number of words in a text.  
+This package is the result of my studies about how to create a documented and tested python package.
 
 ## Installation
 
